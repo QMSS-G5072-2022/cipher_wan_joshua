@@ -1,3 +1,3 @@
 # read version from installed package
-#from importlib.metadata import version
-#__version__ = version("cipher_jw4189")
+from importlib.metadata import version
+__version__ = version("cipher_jw4189")
