@@ -7,7 +7,7 @@ def cipher(text, shift, encrypt=True):
     Parameters
     -----------
     text : Text to be encrypted
-    shift : fixed number of positions down the alphabet
+    shift : number of positions down the alphabet to be shifted
     encrypt : takes in boolean values, encrypt = True to encrypt
     Returns encrypted or decrypted text
     --------
@@ -15,6 +15,8 @@ def cipher(text, shift, encrypt=True):
     ---------
     >>> cipher('Apple', 5)
     'fuuqj'
+    >>> cipher('fuuqj', 5, encrypt=False)
+    'apple'
     """
     alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
     new_text = ''
